@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  body {
+    background: #0097e6;
+  }
+
+.container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 70vh;
+    background: var(--main-color);
+    border-radius: 5px;
+    font-family: "Quicksand", sans-serif;
+    overflow: hidden;
+    color: #797d7f;
+    letter-spacing: 0.5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.inner{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 1;
+    -webkit-transition:1s;
+    transition: 1s;
+     background: #02bfd8!important;
+     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+     overflow: hidden;
+     border-radius: 5px;
+
+}
+
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    height: 80%;
+    -webkit-transform:translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: #33cedc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+.number::before{
+    content: '';
+    position: absolute;
+    top: -130px;
+    right:-30px;
+    width: 90px;
+    height: 200px;
+    background: var(--secondary-color);
+    -webkit-transform : rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: -1;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.5);
+}
+
+.number{
+    position: absolute;
+    margin: 0;
+    top: 15px;
+    right: 15px;
+    color: rgba(255,255,255, 0.7);
+}
+
+.number img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -25px;
+    cursor: pointer;
+    animation: rot is linear;
+}
+
+.number:hover img {
+    animation:rot is linear ;
+}
+
+.quotes{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    width: 80%;
+    font-size: 1.3rem;
+    color: #eee;
+}
+
+.author{
+    position: absolute;
+    top: 70%;
+    left: 78%;
+    -webkit-transform : translate(-50%,-50%);
+    width: 80%;
+    font-size: 1.3rem;
+    color: #000 !important;
+   text-decoration: solid !important;
+}
+
+.button{
+    position: absolute;
+    top: 81%;
+    left:25%;
+    width: 50%;
+    height: 50%;
+}
+
+
+@keyframes rot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+  .newquotes{
+    color: whitesmoke;
+      background:#2ecc71;
+      padding: 8px 9px;
+      border-radius: 1rem;
+      box-shadow: 0 0.3rem 2rem rgba(143, 90, 90, 0.2);
+      border: none;
+      text-align: center;
+  } 
+
+  .newquotes:hover:active{
+     color:#27ae60 !important; 
+     background: #eee !important;
+  }
